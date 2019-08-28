@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/refresh_btn_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorD"
+        android:text="목록 보기"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:background="@color/colorE"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textCode"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorE"
+            android:gravity="center"
+            android:text="코드"
+            android:textColor="@color/colorD" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorE"
+            android:gravity="center"
+            android:text="제목"
+            android:textColor="@color/colorD" />
+
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorE"
+            android:gravity="center"
+            android:text="날짜"
+            android:textColor="@color/colorD" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_diary"
+        android:layout_weight="1" />
+
+</LinearLayout>

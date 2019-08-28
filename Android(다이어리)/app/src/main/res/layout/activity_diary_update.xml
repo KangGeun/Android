@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.geun.a15021003962b01.Diary_Update">
+
+    <EditText
+        android:id="@+id/edit_title_update"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="@color/colorD"
+        android:hint="제목을 입력하세요." />
+
+    <EditText
+        android:id="@+id/edit_contents_update"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorB"
+        android:gravity="top|left"
+        android:hint="내용을 입력하세요."
+        android:lines="15" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="#e1f1cb">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="저장"
+            android:id="@+id/save_btn_update"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="돌아가기"
+            android:id="@+id/return_btn_update"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</LinearLayout>
